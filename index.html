@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurrencyConverter</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <div class="display">
+        <div class="segment">
+          <img src="app-icon.svg" alt="" class="app_icon" />
+          <h1>Currency Converter</h1>
+        </div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="input" value="" />
+        <div class="dropdown">
+          <select id="from_currency"></select>
+          <select id="to_currency"></select>
+        </div>
+        <button id="btn">Convert</button>
+        <p id="result"></p>
+        <p id="LU"><span></span></p>
+      </div>
+    </div>
+  </body>
+
+  <script src="currency_code.js"></script>
+  <!-- <script src="api_key.js"></script> -->
+  <script src="script.js"></script>
+
+  <!-- <script src="script.js"></script> -->
+</html>
