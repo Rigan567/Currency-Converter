@@ -2,7 +2,8 @@
   margin: 0%;
   padding: 0;
   transition: 0.5s;
-  font-family: cursive;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
   background: url(./BG.png);
@@ -23,8 +24,8 @@ body {
 }
 .display {
   /* border: 2px solid purple; */
-  min-height: 70%;
-  min-width: 50%;
+  min-height: 50%;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,19 +44,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 35vh;
-  width: 30vw;
+  height: auto;
+  max-width: 80vw;
 
   background: transparent;
 }
 .segment > img {
   /* border: 3px solid black; */
   /* padding: 10px; */
-
-  height: 18em;
-  width: 20em;
-  align-items: center;
+  display: block;
+  height: auto;
+  max-width: 60%;
   transition: 0.7s;
+  aspect-ratio: 2/3;
 }
 .segment > img:hover {
   animation: myAnimation 2s linear infinite;
@@ -72,13 +73,13 @@ label {
   font-size: 1.5rem;
 }
 #input {
-  padding: 10px 20px;
+  padding: 10px 50px;
   outline: none;
   border: none;
   background: rgba(255, 255, 255, 0.288);
   box-shadow: 10px 10px 25px black;
   color: white;
-  font: 600 1.2rem cursive;
+  font: 600 1.2rem;
   margin: 20px;
   cursor: pointer;
   transition: 0.3s;
@@ -125,20 +126,21 @@ button {
   margin: 15px;
   padding: 10px;
   background-color: white;
-  font: bold 1rem cursive;
+  font-size: 1.2rem;
+  font-weight: bolder;
   transition: all 0.3s;
   cursor: pointer;
 }
 button:hover {
-  transform: scale(1.3);
-  background-color: rgba(43, 39, 95, 1);
+  transform: scale(1.1);
+  background: linear-gradient(to right, #e74c3c, #3498db);
   transform: translateX(50%, 50%);
-  color: white;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.245);
+  /* color: white; */
 }
 
 #LU,
 #result {
-  font: bolder 1.3rem san-sarif;
   color: white;
   margin: 20px;
 }
